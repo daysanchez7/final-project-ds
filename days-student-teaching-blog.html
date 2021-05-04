@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!--
+    Author: Dayanna Sanchez CPSC-20000
+    Project: Day's Student-Teaching Blog 
+
+    What is my application about? The application Day’s Student-Teaching Blog will consist of various things. 
+    When the website is first open, the user will see a brief background of myself. 
+    When you scroll down, student-teachers can rate how they're feeling for their student-teaching.
+    Depending how they feel, they will recieve a postive message. 
+    When you scroll further, there will be additional quotes to motivate student-teachers during their 
+    student-teaching. 
+    At the very bottom of the page, I will provide advice on what to do and not to do during their student-teaching.   
+    Overall, Day’s 
+    Student-Teaching Blog is a community of student-teachers that I will be encouraging.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Day's Student-Teaching Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>&#127822;&#128027;Day's Student-Teaching Blog &#128218;&#128207;</h1>
+        <p>&#9787; Welcome Student-Teachers &#9787;</p>
+        <p class="p1"><a href="dayannasanchez@lewisu.edu">dayannasanchez@lewisu.edu</a></p>
+    </div>
+
+
+    <img src="Teachers.gif" alt="Pencils" style="width:600px;height:300px;">
+    <p class="p1"><a href="https://www.pinterest.com/pin/612700724276037962/">Link for Gif</a></p>
+
+    <div class="header2">
+        <h1>My name is Dayanna Sanchez!</h1>
+    </div>
+
+    <img src="day.jpg" alt="Day" style="width:500px;">
+
+    <h3>A little bit about me!</h3>
+    <ul class="ul1">
+        <li>University: Lewis Univeristy in Romeoville, Illinois</li>
+        <li>Major: Secondary Education for Mathematics</li>
+        <li>Clubs/Sports Involved: Women's Track and Field, Women's Cross Country, & PUMA STEM Program</li>
+    </ul>
+
+    <h3>How did I become interested in Secondary Education for Mathematics?</h3>
+    <p class="p2">As a student, you come to realize the significance an educator has in your life. 
+          Besides our teachers teaching us day by day certain material to extend our knowledge, 
+          they help us find a purpose within our lives when we don’t see it. They set us up for 
+          success within our communities but above all, they teach us to be self-driven and to 
+          thrive even after the hardest climb. Furthermore, as a future secondary educator teaching
+          mathematics, this is the type of class most students fear and despise due to its level of 
+          difficulty. As my love towards this subject grew but continued to have some panic while its 
+          complexity increased, my Calculus high school teacher eased off that tension. For instance, 
+          on the very first day of school, she made us acknowledged that it wasn’t going to be easy 
+          but we were going to work as a team. While she taught us, she managed to teach with enthusiasm, 
+          which made this class feel like it was a piece of cake at times. When it came to a difficult unit, 
+          she shared her struggles within that area to make sure we didn’t get upset with ourselves or feel 
+          any less intelligent. As a result, I was encouraged by her techniques because she created this 
+          positive atmosphere within her classroom that students actually wanted to attend her class and 
+          master mathematical skills. I desire one day to share the same passion towards this subject, 
+          where I can empower those within my future classroom. 
+    </p>
+
+    <h3>What is the purpose of Day's Student-Teaching Blog</h3>
+    <p class="p3">The purpose is to encourage all student-teachers to continue to strive no matter how difficult things get!
+        Additionally, I want to offer any advice from my student-teaching experience.</p>
+
+    <div class="header2">
+        <h1>How do you Feel for Today's Student-Teaching?</h1>
+        </div>
+    <img src="emotions.png" alt="emotions" style="width:300px;">
+    <p class="p1"><a href="https://www.polleverywhere.com/clickable_images/0rDZHIOYETGoGBS">Link for Image</a></p>
+    <label class="l1">Rate how prepared you feel from 1-5! 1 being NOT prepared and 5 feeling READY!</label><br />
+    <select id="preparedness">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <br /><br /><br />
+
+    <label class="l2">Rate how you nervous/excited you feel from 1-5! 1 being nervous prepared and 5 feeling excited!</label><br />
+    <select id="nervousExcited">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <br /><br /><br />
+    <button onclick="calculateFeelings()">Calculate Feelings</button>
+    <p id="feelings"></p>
+
+<script>
+console.log("Day's Student-Teaching Blog");
+
+function calculateFeelings() {
+    console.log("calculateFeelings()");
+
+    let preparednessResponse = parseInt(document.getElementById("preparedness").selectedOptions[0].value);
+    let nervousExcitedResponse = parseInt(document.getElementById("nervousExcited").selectedOptions[0].value);
+
+    let totalFeelings = preparednessResponse + nervousExcitedResponse;
+
+    console.log("Total Feelings:" + totalFeelings);
+    
+    if (totalFeelings >= 8) {
+        alert("Go do your thing today! Your future is bright and your future students are going to adore you!"); 
+    } else if (totalFeelings >= 5) {
+        alert("Almost there! Keep thinking postive and you'll succeed in you're student-teching!");
+    } else if (totalFeelings >= 3) {
+        alert("Come on! You've been preparing yourself to begin your student-teaching! Don't doubt yourself now, you got this!");
+    } else {
+        alert("You might not feel great today, but trust me, you're going to do amazing!");
+    }
+}
+</script>
+
+<div class="header2">
+    <h1>Motivational Quotes</h1>
+  </div>
+
+
+<p class = "p4"><i>"Even on your worst day in the classroom, you are still some child's best hope." - Larry Bell</i></p>
+<img src="Quote1.png" alt="Quote1" width="200">
+<p class="p1"><a href="https://www.pinterest.com/pin/104286547611258779/">Link for Image</a></p>
+
+<p class = "p5"><i>"The fact that you worry about being a good teacher, means that you already are one." - Jodi Picoult</i></p>
+<img src="Quote2.png" alt="Quote2" width="200">
+<p class="p1"><a href="https://www.weareteachers.com/best-inspirational-teacher-quotes/">Link for Image</a></p>
+
+<p class = "p6"><i>"One child, one teacher, one book, one pen can change the world." - Malala Yousafzai</i></p>
+<img src="Quote3.jpg" alt="Quote3" width="200">
+<p class="p1"><a href="https://parade.com/1018796/marynliles/teacher-quotes/">Link for Image</a></p>
+
+<div class="header2">
+    <h1>Advice for Student-Teaching</h1>
+    </div>
+<h3>Advice of To Do's During Student-Teaching</h3>
+<ul class="ul2">
+    <li>Have a notepad in hand to take notes of great strategies from other teachers</li>
+    <li>Observe</li>
+    <li>Ask various questions</li>
+    <li>Wear professional clothes</li>
+</ul>
+
+<h3>Advice of Do NOT Do During Student-Teaching</h3>
+<ul class="ul3">
+    <li>Put your phone away</li>
+    <li>Show respect to teachers, administration, and students</li>
+    <li>Interact with the students</li>
+</ul>
+
+</body>
+
+</html>

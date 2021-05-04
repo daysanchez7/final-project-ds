@@ -1,0 +1,91 @@
+body {
+  background-color: rgba(250, 252, 164, 0.377);}
+
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #8fac90ad;
+  color: white;
+  font-size: 30px;}
+
+.p1 {text-align: center; 
+  color: white;
+  font-size: 15px;
+  font-family: "Times New Roman", serif;}
+
+h1 {text-align: center;
+  color:rgb(54, 54, 53);
+  font-size: 55px;
+  font-family: "Lucida Handwriting", cursive;}
+
+h3 {text-align: center;
+  color: rgb(107, 133, 158);
+  font-size: 35px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}
+
+.ul1 {text-align: center;
+  list-style-position: inside;
+  color: rgb(197, 145, 177);
+  list-style-type:square;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;}
+
+.p2 {text-align: center; 
+  color: rgb(197, 145, 177);
+  font-size: 20px;
+  font-family: "Times New Roman", serif;}
+
+.p3 {text-align: center; 
+  color: rgb(197, 145, 177);
+  font-size: 20px;
+  font-family: "Times New Roman", serif;}
+
+.header2 {
+  padding: 10px;
+  text-align: center;
+  background-image: url("bg18.jpg");
+  font-size: 20px;}
+
+.l1 {text-align: center; 
+  color: rgb(197, 145, 177);
+  font-size: 24px;
+  font-family: "Times New Roman", serif;}
+
+.l2 {text-align: center; 
+  color: rgb(197, 145, 177);
+  font-size: 24px;
+  font-family: "Times New Roman", serif;}
+
+.p4 {text-align: center; 
+  color: rgb(197, 145, 177);
+  font-size: 27px;
+  font-family: "Times New Roman", serif;}
+
+.p5 {text-align: center; 
+  color: rgb(197, 145, 177);
+  font-size: 27px;
+  font-family: "Times New Roman", serif;}
+
+.p6 {text-align: center; 
+  color: rgb(197, 145, 177);
+  font-size: 27px;
+  font-family: "Times New Roman", serif;}
+
+.ul2 {text-align: center;
+  list-style-position: inside;
+  color: rgb(197, 145, 177);
+  list-style-type:square;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;}
+
+.ul3 {text-align: center;
+  list-style-position: inside;
+  color: rgb(197, 145, 177);
+  list-style-type:square;
+  font-size: 20px;
+  font-family: "Times New Roman", serif;}
+
+img {display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
